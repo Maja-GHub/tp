@@ -40,7 +40,7 @@ jobs:
     - name: Get changed .c, .cpp, .inc files
       if: github.event_name != 'pull_request'
       id: changed-files-specific
-      uses: tj-actions/changed-files@v36
+      uses: tj-actions/changed-files@v46
       with:
         files: |
           **/*.{c,cpp,inc}
